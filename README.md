@@ -1,82 +1,41 @@
-\# Sistem embedded bazat pe ESP32 pentru controlul și navigația unui vehicul miniatural
-
-
+# Sistem embedded bazat pe ESP32 pentru controlul și navigația unui vehicul miniatural
 
 Acest depozit conține codul sursă dezvoltat în cadrul proiectului de licență.
 
-
-
-\## Autor
-
-
+## Autor
 
 Rusu Vasile-Pintilie
 
-
-
-\## Descriere
-
-
+## Descriere
 
 Proiectul constă în realizarea unui vehicul miniatural cu patru motoare de curent continuu, controlat de un microcontroler ESP32.
 
-
-
 Sistemul permite:
+- controlul manual prin Bluetooth Low Energy;
+- deplasarea înainte și înapoi;
+- virarea la stânga și la dreapta;
+- detectarea obstacolelor cu senzori HC-SR04P;
+- executarea unei manevre autonome de ocolire;
+- măsurarea temperaturii și umidității;
+- afișarea informațiilor pe un ecran OLED;
+- citirea senzorilor MPU6050, FSR și de prezență.
 
-\- controlul manual prin Bluetooth Low Energy;
+## Comenzi Bluetooth
 
-\- deplasarea înainte și înapoi;
+- F – deplasare înainte
+- B – deplasare înapoi
+- L – virare la stânga
+- R – virare la dreapta
+- S – oprire
+- A – activarea modului autonom
+- M – revenirea la modul manual
 
-\- virarea la stânga și la dreapta;
+## Fișier principal
 
-\- detectarea obstacolelor cu senzori HC-SR04P;
+`ESP32_Vehicul_Miniatural.ino`
 
-\- executarea unei manevre autonome de ocolire;
+## Platformă de dezvoltare
 
-\- măsurarea temperaturii și umidității;
-
-\- afișarea informațiilor pe un ecran OLED;
-
-\- citirea senzorilor MPU6050, FSR și de prezență.
-
-
-
-\## Comenzi Bluetooth
-
-
-
-\- F – deplasare înainte
-
-\- B – deplasare înapoi
-
-\- L – virare la stânga
-
-\- R – virare la dreapta
-
-\- S – oprire
-
-\- A – activarea modului autonom
-
-\- M – revenirea la modul manual
-
-
-
-\## Fișier principal
-
-
-
-`ESP32\_Vehicul\_Miniatural.ino`
-
-
-
-\## Platformă de dezvoltare
-
-
-
-\- ESP32 Dev Module
-
-\- Arduino IDE
-
-\- ESP32 BLE Terminal
-
+- ESP32 Dev Module
+- Arduino IDE
+- ESP32 BLE Terminal
